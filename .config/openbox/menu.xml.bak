@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="preferences" label="Preferences">
+		<menu id="obConfig" label="Openbox">
+			<item label="GUI Config">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="GUI Menu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Edit menu.xml">
+				<action name="Execute">
+					<execute>mousepad ~/.config/openbox/menu.xml</execute>
+				</action>
+			</item>
+			<item label="Edit rc.xml">
+				<action name="Execute">
+					<execute>mousepad ~/.config/openbox/rc.xml</execute>
+				</action>
+			</item>
+			<item label="Edit hotkeys">
+				<action name="Execute">
+					<execute>obkey</execute>
+				</action>
+			</item>
+			<item label="Edit autostart">
+				<action name="Execute">
+					<execute>mousepad ~/.config/openbox/autostart</execute>
+				</action>
+			</item>
+			<item label="Edit aliases">
+				<action name="Execute">
+					<execute>mousepad ~/.bashrc</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+	<menu id="system-settings" label="System Settings">
+		<item label="GParted">
+			<action name="Execute">
+				<command>sudo gparted</command>
+			</action>
+		</item>
+	</menu>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Pretty Skookum Yo"/>
+		<item label="Terminal">
+			<action name="Execute">
+				<command>exo-open --launch TerminalEmulator</command>
+			</action>
+		</item>
+		<item label="Web Browser">
+			<action name="Execute">
+				<command>exo-open --launch WebBrowser</command>
+			</action>
+		</item>
+		<item label="File Manager">
+			<action name="Execute">
+				<command>exo-open --launch FileManager</command>
+			</action>
+		</item>
+		<item label="Text Editor">
+			<action name="Execute">
+				<command>nvim</command>
+			</action>
+		</item>
+		<separator label="Settings and Shit"/>
+		<menu id="preferences"/>
+		<menu id="system-settings"/>
+		<separator label="Fix and Leave"/>
+		<item label="Reconfigure">
+			<action name="Restart"/>
+		</item>
+		<menu id="root-menu-87644" label="Leaving?">
+			<item label="Reboot">
+				<action name="Execute">
+					<execute>systemctl reboot</execute>
+				</action>
+			</item>
+			<item label="Shutdown">
+				<action name="Execute">
+					<execute>systemctl poweroff</execute>
+				</action>
+			</item>
+			<item label="Exit">
+				<action name="Exit"/>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>

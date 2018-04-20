@@ -1,0 +1,17 @@
+{
+  "serverPort": 1730,
+  "userDefined": {
+    "trackNameTemplate": "%title%",
+    "playlistTrackNameTemplate": "%number% - %artist% - %title%",
+    "albumNameTemplate": "%album%",
+    "createM3UFile": false,
+    "createArtistFolder": true,
+    "createAlbumFolder": true,
+    "downloadLocation": "/home/winter/music/",
+    "artworkSize": "/1400x1400.jpg",
+    "hifi": true,
+    "padtrck": false,
+    "syncedlyrics": false,
+    "numplaylistbyalbum": false
+  }
+}
